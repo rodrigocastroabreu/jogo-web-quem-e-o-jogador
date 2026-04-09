@@ -2,6 +2,12 @@
 
 Projeto criado como gamificação para a plataforma web gamificada do TCC.
 
+## Como executar
+
+O jogo também está disponível online em:
+
+https://jogo-web-quem-e-o-jogador.vercel.app/
+
 ## Descrição
 
 O objetivo do jogo é identificar as opções corretas para cada cenário dentro do tempo disponível.
@@ -26,44 +32,4 @@ Esse jogo faz parte da proposta de gamificação do projeto de TCC, ajudando a t
 - Vite
 - Tailwind CSS
 
-## Como executar
 
-O jogo também está disponível online em:
-
-https://jogo-web-quem-e-o-jogador.vercel.app/
-
-1. Instale as dependências:
-
-```bash
-npm install
-```
-
-2. Inicie o servidor de desenvolvimento:
-
-```bash
-npm run dev
-```
-
-3. Abra o endereço exibido no terminal (geralmente `http://localhost:5173`).
-
-## Build de produção
-
-```bash
-npm run build
-```
-
-## Verificação de tipo
-
-```bash
-npm run typecheck
-```
-
-## Versão publicada
-
-O jogo está disponível online em:
-
-https://jogo-web-quem-e-o-jogador.vercel.app/
-
-## Nota
-
-O tempo de resposta para cada pergunta agora é de 30 segundos.
