@@ -281,6 +281,14 @@ export const scenarios: Scenario[] = [
   },
 ];
 
+// Garantir que as alternativas corretas estejam sempre alinhadas com os jogadores definidos.
+scenarios.forEach((scenario) => {
+  const playerIds = scenario.options.filter((option) => option.isPlayer).map((option) => option.id);
+  if (playerIds.length > 0) {
+    scenario.correctIds = playerIds;
+  }
+});
+
 export const getScenariosByDifficulty = (difficulty: 'easy' | 'medium' | 'hard') =>
   scenarios.filter((s) => s.difficulty === difficulty);
 
