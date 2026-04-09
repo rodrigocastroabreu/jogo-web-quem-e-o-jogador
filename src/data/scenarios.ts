@@ -24,6 +24,16 @@ export const scenarios: Scenario[] = [
       ana: 'Correto! Ana é uma jogadora porque toma uma decisão racional que afeta tanto ela quanto Carlos.',
     },
   },
+    
+    wrongExplanations: {
+      delegado: 'O delegado conduz o interrogatório, mas não toma decisões estratégicas que afetam os resultados do jogo entre os suspeitos.',
+      juiz: 'O juiz aplica as penas já pré-determinadas pelas regras. Ele não decide entre as opções do jogo — os suspeitos é que decidem.',
+    },
+    correctExplanations: {
+      carlos: 'Correto! Carlos decide se confessa ou fica em silêncio, e seu resultado depende também da decisão de Ana.',
+      ana: 'Correto! Ana é uma jogadora porque toma uma decisão racional que afeta tanto ela quanto Carlos.',
+    },
+  },
   {
     id: 'leilao-simples',
     difficulty: 'easy',
