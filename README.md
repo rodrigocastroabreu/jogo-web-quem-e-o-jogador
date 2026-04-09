@@ -28,6 +28,10 @@ Esse jogo faz parte da proposta de gamificação do projeto de TCC, ajudando a t
 
 ## Como executar
 
+O jogo também está disponível online em:
+
+https://jogo-web-quem-e-o-jogador.vercel.app/
+
 1. Instale as dependências:
 
 ```bash
@@ -53,6 +57,12 @@ npm run build
 ```bash
 npm run typecheck
 ```
+
+## Versão publicada
+
+O jogo está disponível online em:
+
+https://jogo-web-quem-e-o-jogador.vercel.app/
 
 ## Nota
 
