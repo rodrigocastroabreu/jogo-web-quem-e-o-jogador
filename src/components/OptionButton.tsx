@@ -1,4 +1,4 @@
-import { Check, X, User, Bot } from 'lucide-react';
+import { Check, X, User, Bot, CheckSquare } from 'lucide-react';
 
 type State = 'idle' | 'selected' | 'correct' | 'wrong' | 'missed';
 
@@ -22,11 +22,13 @@ export default function OptionButton({ label, state, disabled, onClick }: Props)
     state === 'correct' ? Check
     : state === 'wrong' ? X
     : state === 'missed' ? User
-    : state === 'selected' ? Bot
+    : state === 'selected' ? CheckSquare
     : null;
 
   return (
     <button
+      type="button"
+      aria-pressed={state === 'selected'}
       onClick={onClick}
       disabled={disabled}
       className={`
