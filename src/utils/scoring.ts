@@ -1,6 +1,6 @@
 export const BASE_CORRECT = 10;
 export const PENALTY_WRONG = 5;
-export const TIME_LIMIT = 20;
+export const TIME_LIMIT = 30;
 
 export const calcTimeBonus = (timeLeft: number): number => {
   if (timeLeft > 15) return 5;
