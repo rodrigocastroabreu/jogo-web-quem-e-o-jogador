@@ -29,6 +29,7 @@ export default function OptionButton({ label, state, disabled, onClick }: Props)
     <button
       type="button"
       aria-pressed={state === 'selected'}
+      aria-label={`${label}${state === 'selected' ? ' selecionado' : ''}`}
       onClick={onClick}
       disabled={disabled}
       className={`

@@ -112,7 +112,9 @@ export default function QuestionCard({
 
       <div className="bg-slate-800/40 rounded-2xl border border-slate-700/60 p-5 space-y-3">
         <p className="text-white font-bold text-base">{scenario.context}</p>
-        <p className="text-xs text-slate-400">Selecione todas as opções corretas. Você pode marcar mais de uma.</p>
+        <p className="text-xs text-slate-400">
+          Selecione todas as opções corretas. Clique em cada jogador correto — você pode marcar mais de uma opção.
+        </p>
         <div className="space-y-2.5">
           {scenario.options.map((opt) => (
             <OptionButton
