@@ -286,6 +286,10 @@ scenarios.forEach((scenario) => {
   const playerIds = scenario.options.filter((option) => option.isPlayer).map((option) => option.id);
   if (playerIds.length > 0) {
     scenario.correctIds = playerIds;
+  } else {
+    // Em caso de cenário sem jogadores definidos, isso ajuda a detectar o problema.
+    // O jogo não pode funcionar corretamente se não houver uma alternativa correta.
+    console.warn(`Cenário sem opções de jogador: ${scenario.id}`);
   }
 });
 
