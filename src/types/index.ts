@@ -4,7 +4,6 @@ export type GamePhase = 'start' | 'playing' | 'feedback' | 'result';
 export interface Option {
   id: string;
   label: string;
-  isPlayer: boolean;
 }
 
 export interface Scenario {
