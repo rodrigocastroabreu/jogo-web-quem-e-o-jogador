@@ -1,4 +1,4 @@
-import { Check, X, User, Bot, CheckSquare } from 'lucide-react';
+import { Check, X, User, Square, CheckSquare } from 'lucide-react';
 
 type State = 'idle' | 'selected' | 'correct' | 'wrong' | 'missed';
 
@@ -23,7 +23,7 @@ export default function OptionButton({ label, state, disabled, onClick }: Props)
     : state === 'wrong' ? X
     : state === 'missed' ? User
     : state === 'selected' ? CheckSquare
-    : null;
+    : Square;
 
   return (
     <button
@@ -49,7 +49,7 @@ export default function OptionButton({ label, state, disabled, onClick }: Props)
             : 'bg-slate-700 border-slate-500 text-slate-300'}
         `}
       >
-        {Icon ? <Icon size={14} /> : <span>?</span>}
+        <Icon size={14} />
       </div>
       <span className="flex-1">{label}</span>
     </button>
